@@ -26,14 +26,13 @@ const query = graphql`
 
 
 const About = () => {
-    const { allContentfulAbout: { nodes } } = useStaticQuery(query)
-    const aboutUsText = nodes[0].info.json
-
-    const {
+    const { allContentfulAbout: { nodes },
         file: {
             childImageSharp: { fluid }
         }
     } = useStaticQuery(query)
+    const aboutUsText = nodes[0].info.json
+
 
     const imageData = fluid
 

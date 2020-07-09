@@ -1,24 +1,23 @@
 
-import React from "react"
-
-import { useStaticQuery, graphql } from "gatsby"
+import React, { useState } from "react"
+import Nav from "./nav"
+import Sidebar from "./sidebar"
+import Footer from "./footer"
 
 
 const Layout = ({ children }) => {
-    //     const data = useStaticQuery(graphql`
-    //     query SiteTitleQuery {
-    //       site {
-    //         siteMetadata {
-    //           title
-    //         }
-    //       }
-    //     }
-    //   `)
+    const [isOpen, setIsOpen] = useState(false)
+    const toggleSidebar = () => {
+        setIsOpen(!isOpen)
+        console.log('works')
+    }
 
     return (
         <>
-            <h1>Hello!</h1>
+            <Nav toggleSidebar={toggleSidebar} />
+            {/* <Sidebar isOpen={isOpen} toggleSidebar={toggleSidebar} /> */}
             {children}
+            <Footer />
         </>
     )
 }

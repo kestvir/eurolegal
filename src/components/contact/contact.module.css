@@ -1,0 +1,40 @@
+.contact {
+    background-color: var(--clr-primary-1);
+    display: grid;
+    place-items: center;
+}
+
+.formControl {
+    color: var(--clr-primary-3);
+    font-size: 12px;
+    letter-spacing: .75px;
+    font-weight: 700;
+    width: 100%;
+    height: 50px;
+    padding: 10px;
+    line-height: 1.42857143;
+    background-image: none;
+    background-color: var(--clr-primary-4);
+    border-radius: 0px;
+    margin-bottom: 10px;
+    border: 1px solid var(--clr-primary-2);
+    -webkit-box-shadow: inset 0 0px 0px rgba(0, 0, 0, .075);
+    box-shadow: inset 0 0px 0px rgba(0, 0, 0, .075);
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+
+textarea.formControl {
+    height: auto;
+    margin-bottom: 25px;
+}
+
+.submitBtn {
+    color: var(--clr-primary-2);
+    border: var(--clr-primary-2) 2px solid;
+}
+
+.submitBtn:hover {
+    color: var(--clr-primary-1);
+    background-color: var(--clr-primary-2);
+}

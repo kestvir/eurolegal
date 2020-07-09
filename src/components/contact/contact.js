@@ -6,7 +6,7 @@ const Contact = () => {
     return (
         <section className={`section ${styles.contact}`} id="contact-section">
             <Title title={"Contact Us"} />
-            <form action="https://formspree.io/YOUR_ID" method="POST">
+            <form action="https://formspree.io/mnqggylb" method="POST">
                 <div className="form-group">
                     <input
                         type="text"

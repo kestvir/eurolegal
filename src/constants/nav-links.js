@@ -10,7 +10,7 @@ const data = [
         id: 2,
         text: "about",
         url: "about-section",
-        offset: -120
+        offset: -250
     },
     {
         id: 3,

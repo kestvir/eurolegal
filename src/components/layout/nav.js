@@ -5,7 +5,7 @@ import { GiHamburgerMenu } from "react-icons/gi"
 import styles from "./css/nav.module.css"
 
 
-const Nav = ({ toggleSidebar }) => {
+const Nav = ({ toggleResponsiveNav, isOpen }) => {
     useEffect(() => {
         window.addEventListener("scroll", changeNavbarPosition);
     })
@@ -26,21 +26,22 @@ const Nav = ({ toggleSidebar }) => {
         <header id="header">
             <nav className={styles.navbar} id="header-nav">
                 <div className={styles.navCenter}>
-                    <div className={styles.brand}>
-                        <img src={logo} className="logo" />
-                        <div className={styles.brandInfo}>
-                            <span className={styles.brandName}>EuroLegal</span>
-                            <span className={styles.brandRole}>Business and Legal consulting</span>
+                    <div className={styles.topNav}>
+                        <div className={styles.brand}>
+                            <img src={logo} className="logo" />
+                            <div className={styles.brandInfo}>
+                                <span className={styles.brandName}>EuroLegal</span>
+                                <span className={styles.brandRole}>Business and Legal consulting</span>
+                            </div>
                         </div>
+                        <GiHamburgerMenu className={styles.hamburgerIcon} onClick={toggleResponsiveNav} />
                     </div>
-                    <NavLinks styleClass={styles.navLinks} />
-                    <GiHamburgerMenu className={styles.hamburgerIcon} onClick={toggleSidebar} />
+                    <div className={`${styles.navLinksContainer} ${isOpen ? styles.displayNavContainer : ""}`}>
+                        <NavLinks styleClass={`${styles.navLinks} ${isOpen ? styles.displayNavLinks : ""} `} />
+                    </div>
                 </div>
             </nav>
         </header>
-
-
-
     );
 }
 

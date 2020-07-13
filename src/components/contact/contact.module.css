@@ -39,3 +39,9 @@ textarea.formControl {
     color: var(--clr-primary-1);
     background-color: var(--clr-primary-2);
 }
+
+@media screen and (max-width: 576px) {
+    .contact {
+        padding: 0 2rem;
+    }
+}

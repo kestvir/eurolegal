@@ -10,7 +10,7 @@ import { FaBriefcase, FaCalculator } from "react-icons/fa"
 
 export const query = graphql`
 {
-    allContentfulServices(sort: {fields: created_at, order: ASC}) {
+    allContentfulServices(sort: {fields: createdAt, order: ASC}) {
       nodes {
         title
         id

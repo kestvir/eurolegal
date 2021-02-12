@@ -6,7 +6,7 @@ const Layout = ({ children }) => {
   const [isResponsiveNavOpen, setIsResponsiveNavOpen] = useState(false)
 
   const toggleResponsiveNav = () => {
-    setIsResponsiveNavOpen(!isResponsiveNavOpen)
+    setIsResponsiveNavOpen(prevState => !prevState)
   }
 
   return (

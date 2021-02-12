@@ -2,12 +2,12 @@ import React, { useEffect } from "react"
 import logo from "../../images/header_logo.jpg"
 import NavLinks from "../../constants/nav-links"
 import { GiHamburgerMenu } from "react-icons/gi"
-import styles from "./css/nav.module.css"
+import styles from "./css/header.module.css"
 
 const Header = ({ toggleResponsiveNav, isResponsiveNavOpen }) => {
   useEffect(() => {
     window.addEventListener("scroll", changeNavbarPosition)
-  })
+  }, [])
 
   const changeNavbarPosition = () => {
     const distanceY = window.pageYOffset || document.documentElement.scrollTop,
@@ -41,12 +41,12 @@ const Header = ({ toggleResponsiveNav, isResponsiveNavOpen }) => {
           </div>
           <div
             className={`${styles.navLinksContainer} ${
-              isResponsiveNavOpen ? styles.displayNavContainer : ""
+              isResponsiveNavOpen && styles.responsiveNavContainer
             }`}
           >
             <NavLinks
               styleClass={`${styles.navLinks} ${
-                isResponsiveNavOpen ? styles.displayNavLinks : ""
+                isResponsiveNavOpen && styles.responsiveNavLinksList
               } `}
             />
           </div>

@@ -5,7 +5,7 @@ import Title from "../title"
 const Contact = () => {
   return (
     <section className={`section ${styles.contact}`} id="contact-section">
-      <Title title={"Contact Us"} />
+      <Title title="Contact Us" />
       <form action="https://formspree.io/mnqggylb" method="POST">
         <div className={styles.formGroup}>
           <input

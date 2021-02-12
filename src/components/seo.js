@@ -14,17 +14,14 @@ const query = graphql`
     }
   }
 `
-const SEO = ({ title, description }) => {
-    const { site } = useStaticQuery(query)
-    const {
-        siteDesc,
-        siteTitle,
-    } = site.siteMetadata
-    return (
-        <Helmet htmlAttributes={{ lang: "en" }} title={siteTitle}>
-            <meta name="description" content={siteDesc} />
-        </Helmet>
-    )
+const SEO = () => {
+  const { site } = useStaticQuery(query)
+  const { siteDesc, siteTitle } = site.siteMetadata
+  return (
+    <Helmet htmlAttributes={{ lang: "en" }} title={siteTitle}>
+      <meta name="description" content={siteDesc} />
+    </Helmet>
+  )
 }
 
-export default SEO;
+export default SEO

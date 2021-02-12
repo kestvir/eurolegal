@@ -1,24 +1,24 @@
-
 import React, { useState } from "react"
-import Nav from "./nav"
+import Header from "./Header"
 import Footer from "./footer"
 
-
 const Layout = ({ children }) => {
-    const [isOpen, setIsOpen] = useState(false)
-    const toggleResponsiveNav = () => {
-        setIsOpen(!isOpen)
-        console.log('works')
-    }
+  const [isResponsiveNavOpen, setIsResponsiveNavOpen] = useState(false)
 
-    return (
-        <>
-            <Nav isOpen={isOpen} toggleResponsiveNav={toggleResponsiveNav} />
-            {children}
-            <Footer />
-        </>
-    )
+  const toggleResponsiveNav = () => {
+    setIsResponsiveNavOpen(!isResponsiveNavOpen)
+  }
+
+  return (
+    <>
+      <Header
+        isResponsiveNavOpen={isResponsiveNavOpen}
+        toggleResponsiveNav={toggleResponsiveNav}
+      />
+      {children}
+      <Footer />
+    </>
+  )
 }
-
 
 export default Layout

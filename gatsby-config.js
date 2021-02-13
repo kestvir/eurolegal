@@ -21,21 +21,22 @@ module.exports = {
     },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
+
     {
-      resolve: `gatsby-plugin-google-fonts-v2`,
+      resolve: `gatsby-plugin-webfonts`,
       options: {
-        fonts: [
-          {
-            family: "PT Serif",
-            variable: true,
-            weights: ["400..700"],
-          },
-          {
-            family: "Lato",
-            variable: true,
-            weights: ["400..700"],
-          },
-        ],
+        fonts: {
+          google: [
+            {
+              family: "Lato",
+              variants: ["400", "700"],
+            },
+            {
+              family: "PT Serif",
+              variants: ["400", "700"],
+            },
+          ],
+        },
       },
     },
     {

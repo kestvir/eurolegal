@@ -1,5 +1,5 @@
 import React, { useState } from "react"
-import Header from "./header"
+import Header from "./hgeader"
 import Footer from "./footer"
 
 const Layout = ({ children }) => {

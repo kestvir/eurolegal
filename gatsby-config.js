@@ -5,7 +5,7 @@ require("dotenv").config({
 module.exports = {
   siteMetadata: {
     title: `Eurolegal Baltic`,
-    description: `UAB Eurolegal Baltic - is a professional Business and project supervision company with a team of qualified experts who specialize in organization and supervision of biometric, secure printing and other technological projects, assistance in participating in public procurement, business consulting.`,
+    description: `UAB Eurolegal Baltic - is a professional business and project supervision company with a team of qualified experts who specialize in organization and supervision of biometric, secure printing and other technological projects, assistance in participating in public procurement, business consulting.`,
     author: `@VKestutis`,
     siteUrl: `https://eurolegalbaltic.com/`,
   },

@@ -28,9 +28,9 @@ const Header = ({ toggleResponsiveNav, isResponsiveNavOpen }) => {
             <div className={styles.brand}>
               <img src={logo} className="logo" />
               <div className={styles.brandInfo}>
-                <span className={styles.brandName}>EuroLegal</span>
+                <span className={styles.brandName}>Eurolegal Baltic</span>
                 <span className={styles.brandRole}>
-                  Business and Legal consulting
+                Business and project supervision
                 </span>
               </div>
             </div>

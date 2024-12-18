@@ -45,7 +45,7 @@ const Footer = () => {
         </div>
       </div>
       <div className={styles.tinyFooter}>
-        <span>EuroLegal {new Date().getFullYear()} © All Rights Reserved</span>
+        <span>Eurolegal Baltic {new Date().getFullYear()} © All Rights Reserved</span>
       </div>
     </footer>
   )

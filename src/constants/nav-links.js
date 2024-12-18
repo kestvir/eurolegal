@@ -14,12 +14,6 @@ const data = [
   },
   {
     id: 3,
-    text: "services",
-    url: "services-section",
-    offset: -280,
-  },
-  {
-    id: 4,
     text: "contact",
     url: "contact-section",
     offset: -240,

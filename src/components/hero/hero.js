@@ -44,9 +44,9 @@ const Hero = ({ className }) => {
         >
           <div className="text-center">
             <h3 className={styles.weAre}>We Are</h3>
-            <h2 className={styles.heroName}>EuroLegal</h2>
+            <h2 className={styles.heroName}>Eurolegal Baltic</h2>
             <h3 className={styles.heroDescriptionPosition}>
-              Business and Legal consulting
+              Business and project supervision
             </h3>
             <Link
               className={styles.heroBtn}
